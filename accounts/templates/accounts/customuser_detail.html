@@ -1,0 +1,12 @@
+<div>
+    {% if object.image %}
+    <img src="{{ object.image.url }}" width="200" height="200"><br/>
+    {% endif %}
+    {{ object.fullname }}<br />
+    {{ object.dob }}<br />
+    {{ object.phonenumber }}<br />
+    {{ object.passportnumber }}<br />
+    <a href="/logout/">
+        Log out
+    </a>
+</div>
